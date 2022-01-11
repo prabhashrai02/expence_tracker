@@ -1,5 +1,5 @@
-import Navbar from "../navbar/navbar";
-import ExpenceItem from "../expencesItem/expenceItem";
+import Navbar from "../Navbar/Navbar";
+import ExpenceItem from "../ExpencesItem/ExpenceItem";
 
 function Homepage() {
     const expence = [
