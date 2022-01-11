@@ -1,3 +1,4 @@
+import './ExpenseForm.css';
 
 // we can also use this type of function call
 const ExpenseForm = () => {
@@ -13,7 +14,10 @@ const ExpenseForm = () => {
             </div>
             <div className='add_expense_control'>
                 <label>Date</label>
-                <input type="text" min={"2019-01-01"} max={"2022-12-31"} />
+                <input type="text"
+                 min={"2019-01-01"} 
+                 max={"2022-12-31"}
+                 placeholder='dd.mm.yyyy' />
             </div>
             <div className='add_expense_actions'>
                 <button type='submit'>
