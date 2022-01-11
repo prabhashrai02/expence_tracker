@@ -1,12 +1,10 @@
 import './App.css';
-import ExpenceItem from './Components/expencesItem/expenceItem';
-import Navbar from './Components/navbar/navbar';
+import Homepage from './Components/homePage/homePage';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <ExpenceItem />
+      <Homepage />
     </div>
   );
 }
