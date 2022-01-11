@@ -1,10 +1,10 @@
 import Navbar from "../Navbar/Navbar";
-import ExpenceItem from "../ExpencesItem/ExpenceItem";
+import ExpenseItem from "../ExpenseItem/ExpenseItem";
 import Card from "../Card/Card";
 import './HomePage.css';
 
 function Homepage() {
-    const expence = [
+    const expense = [
         {
             id: `1`,
             date: new Date(),
@@ -16,10 +16,10 @@ function Homepage() {
         <div>
             <Navbar />
             <Card className="expenses">
-                <ExpenceItem 
-                    date = {expence[0].date}
-                    title = {expence[0].title}
-                    amount = {expence[0].amount}
+                <ExpenseItem 
+                    date = {expense[0].date}
+                    title = {expense[0].title}
+                    amount = {expense[0].amount}
                 />
             </Card>
             
