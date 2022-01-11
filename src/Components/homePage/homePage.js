@@ -1,5 +1,6 @@
 import Navbar from "../Navbar/Navbar";
 import ExpenseItem from "../ExpenseItem/ExpenseItem";
+import AddExpense from "../AddExpense/AddExpense";
 import Card from "../Card/Card";
 import './HomePage.css';
 
@@ -15,6 +16,7 @@ function Homepage() {
     return (
         <div>
             <Navbar />
+            <AddExpense />
             <Card className="expenses">
                 <ExpenseItem 
                     date = {expense[0].date}
