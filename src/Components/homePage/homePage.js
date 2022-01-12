@@ -1,20 +1,18 @@
-import React from "react";
 import Navbar from "../Navbar/Navbar";
-import ExpenseItem from "../ExpenseItem/ExpenseItem";
 import AddExpense from "../AddExpense/AddExpense";
-import Card from "../Card/Card";
 import './HomePage.css';
+import Expenses from "../Expenses/Expenses";
 
 function Homepage() {
     
-    let expense = [
+    const expense = [
         {
             id: `1`,
             date: new Date(),
             title: `new`,
             amount: 200
         }
-    ]
+    ];
 
     const saveNewData = (enteredData) => {
         console.log(enteredData);
@@ -24,15 +22,7 @@ function Homepage() {
         <div>
             <Navbar />
             <AddExpense onSaveData={saveNewData} />
-            <Card className="expenses">
-                    <ExpenseItem 
-                        date = {expense[0].date}
-                        title = {expense[0].title}
-                        amount = {expense[0].amount}
-                    />
-                
-            </Card>
-            
+            <Expenses items={expense} />
         </div>
     )
 }
