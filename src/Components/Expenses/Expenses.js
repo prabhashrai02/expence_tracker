@@ -16,7 +16,7 @@ const Expenses = (props) => {
     });
 
     return(
-        <div>
+        <li>
             <Card className="expenses">
                 <ExpenseFilter 
                     selected={filteredYear}
@@ -25,7 +25,7 @@ const Expenses = (props) => {
 
                 <ExpenseList items={filteredExpenses} />
             </Card>
-        </div>
+        </li>
     );
 };
 
