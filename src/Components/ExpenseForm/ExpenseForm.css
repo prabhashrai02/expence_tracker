@@ -26,5 +26,6 @@
 }
   
 .add_expense_actions {
-    text-align: right;
+    margin-left: 22%;
+    margin-top: 2%;
 }
