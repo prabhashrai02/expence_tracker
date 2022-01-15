@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Navbar from "../Navbar/Navbar";
 import AddExpense from "../AddExpense/AddExpense";
-import './HomePage.css';
+import './homePage.css';
 import Expenses from "../Expenses/Expenses";
 
 const expense = [
